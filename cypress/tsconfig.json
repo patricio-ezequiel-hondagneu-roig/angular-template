@@ -1,0 +1,18 @@
+{
+	"extends": "../tsconfig.json",
+    "compilerOptions": {
+		"strict": true,
+		"baseUrl": "../node_modules",
+        "sourceMap": false,
+		"outDir": "../../dist/out-tsc",
+		"resolveJsonModule": true,
+		"moduleResolution": "node",
+		"types": [
+			"cypress"
+		]
+	},
+	"include": [
+		"../node_modules/cypress",
+		"*/*.ts"
+	]
+}
