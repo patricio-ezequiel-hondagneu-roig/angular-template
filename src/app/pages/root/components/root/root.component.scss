@@ -1,0 +1,15 @@
+.router-outlet-container {
+	flex: 1 1 auto;
+	position: relative;
+	border: 1rem solid pink;
+
+	&::after {
+		content: 'router-outlet (Root)';
+		display: block;
+		position: absolute;
+		bottom: -0.9rem;
+		right: -0.9rem;
+		font-size: 0.8rem;
+		font-family: monospace;
+	}
+}
